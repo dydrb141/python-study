@@ -99,6 +99,9 @@ print(z)
 print(3 in z) #튜플 안에 3이 있는지 true false
 
 print(z.index(4))
+print(z.count(1)) #z안에 1이 몇개 있는지 count
+
+
 
 
 
