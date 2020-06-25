@@ -37,6 +37,11 @@ print(a[::-1])
 a = "010-7777-9999"
 print(a.replace('-', ''))
 
+# 정규표현식
+import re
+print(a.sub('[^0-9]', '', a))
+
+
 
 # 8. 다음 문자열(URL)에서 "http://" 부분을 제거 후 출력하세요. : "http://daum.net"
 
