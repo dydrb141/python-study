@@ -47,3 +47,39 @@ print('or :', a > b or c > b)
 print('not :', not a > b)
 print('not :', not True)
 print('not :', not False)
+
+
+# 산술 , 관계, 논리 연산자
+# 산술 > 관계 > 논리 순서로 적용
+
+print('ex1 : ', 5 + 10 > 0 and not 7 + 3  == 10)
+
+score1 = 90
+score2 = 'A'
+
+if score1 >= 90 and score2 == 'A':
+    print("합격")
+else:
+    print("미안")
+
+# 다중 조건문
+num = 91
+if num >= 90:
+    print("num 등급 A", num)
+elif num >= 80:
+    print("num 등급 B", num)
+else :
+    print("꽝")
+
+age = 27
+hegiht = 175
+
+if age >= 20:
+    if hegiht >= 170:
+        print("A지망 지원 가능")
+    elif height >= 160:
+        print("B지망 지원 가능")
+    else:
+        print("지원 불가")
+else:
+    print("20세 이상 지원 가능 ")
