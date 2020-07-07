@@ -25,4 +25,73 @@ print("1 ~100: ", sum1)
 print("1 ~ 100 :", sum(range(1, 101)))
 print("1 ~ 100 :", sum(range(1, 101, 2)))
 
+# 시퀀스 (순서가 있는) 자료형 반복
+# 문자열, 리스트, 튜플, 집합, 사전 반복 가능
+# iterable 리턴 함수: range, reversed, enumerate, filter, map, zip
+
+names = ["Kim", "Park", "Cho", "Choi", "Yoo"]
+
+for name in names:
+    print("You Are :", name)
+
+word = "dreams"
+
+for s in word:
+    print("Word:", s)
+
+my_info = {
+    "name": "Kim",
+    "age": 33,
+    "city": "Seoul"
+}
+
+for key in my_info:
+    print("my_info: ", key)
+
+for v in my_info.values():
+    print("my_info: ", v)
+
+for k in my_info.keys():
+    print("my_info: ", k)
+
+for k, v in my_info.items():
+    print("my_info: ", k, v)
+
+name = "KeenRY"
+
+for n in name:
+    if n.isupper():
+        print(n.lower())
+    if n.islower():
+        print(n.upper())
+
+# Break
+numbers = [14, 3, 4, 7, 24, 17, 33, 15, 34, 36, 38]
+
+for num in numbers:
+    if num == 33:
+        print("found : 33")
+        break
+    else :
+        print("not fond")
+else: #반복문이 정상적으로 실행 (모든 순회를 했다면)이 완료 되면 else문을 실행
+    print("not found 33..........")
+
+# continue
+
+lt = ["1", 2, 5, True, 4.3, complex(4)]
+
+for v in lt:
+    if type(v) is float:
+        continue
+    print("타입:", type(v))
+
+
+name = "test"
+
+print(reversed(name))
+print(list(reversed(name)))
+print(list(name))
+print(tuple(reversed(name)))
+
 
