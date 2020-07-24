@@ -65,8 +65,6 @@ class WareHouse:
     def __del__(self):
         WareHouse.stock_num -= 1
 
-
-
 user1 = WareHouse("KIm")
 user2 = WareHouse("Park")
 user3 = WareHouse("Lee")
