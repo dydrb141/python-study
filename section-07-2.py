@@ -57,7 +57,6 @@ print(BmwCar.mro())
 print(BenzCar.mro())
 
 
-
 #다중 상속
 class x():
     pass
