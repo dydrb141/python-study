@@ -51,7 +51,6 @@ model2 = BenzCar('520d', 'sedan', 'red')
 
 print(model2.show());
 
-
 # Inheritance Info
 print(BmwCar.mro())
 print(BenzCar.mro())
